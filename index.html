@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="super-container">
+        <header>
+            <div class="centric-div">
+                <h1>Schiavi Calcolatori</h1>
+            </div>
+        </header>
+        <button id="reset" onclick="reset()">Reset</button>
+        <div class="centric-div">
+            <p>Digita un numero</p>
+        </div>
+        <div class="centric-div input-div">
+            <input type="search" name="" id="input">
+        </div>
+        <div class="main-divs centric-div">
+            <div class="centric-div">
+                <p>Trova il fattoriale del numero selezionato</p>
+            </div>
+            <div class="centric-div">
+                <button onclick="calcFactorial(document.getElementById('input').value)">Calcola Fattoriale</button>
+            </div>
+            <img id="loader2" style="display: none;" src="./loading.gif" alt="">
+            <p id="result-factorial"></p>
+        </div>
+        <div class="main-divs centric-div">
+            <div class="centric-div">
+                <p>Trova il numero nella posizione selezionata della serie di Fibonacci </p>
+            </div>
+            <div class="centric-div">
+                <button onclick="calcFibonacci(document.getElementById('input').value)">Calcola Fibonacci</button>
+            </div>
+            <img id="loader3" style="display: none;" src="./loading.gif" alt="">
+            <p id="result-fibonacci"></p>
+        </div>
+        <div class="main-divs centric-div">
+            <div class="centric-div">
+                <p>Trova tutti i numeri primi da 2 al numero selezionato</p>
+            </div>
+            <div class="centric-div">
+                <button onclick="calcPrime(document.getElementById('input').value)">Calcola numeri primi</button>
+            </div>
+            <img id="loader" style="display: none;" src="./loading.gif" alt="">
+            <p id="result-prime"></p>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

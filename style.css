@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0%;
+    min-height: 100vh;
+    background-color: rgb(233, 233, 233);
+}
+
+header{
+    padding-top: 20px;
+    border-bottom: 5px solid darkred;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.centric-div{
+    width: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centric-div img{
+    width: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.centric-div p{
+    width: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.input-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.input-div input{
+    padding: 10px;
+    border-color: darkred;
+}
+
+.main-divs{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    border-top: 2px solid darkred;
+}
+
+.centric-div button{
+    padding: 20px;
+    border-radius: 0%;
+}
+
+#reset{
+    position: relative;
+    padding: 10px;
+    width: 80px;
+    left: 5%;
+    border-bottom: 2px solid darkred;
+    border-left: 2px solid darkred;
+    border-right: 2px solid darkred;
+}
+
+#nav-img{
+    position: fixed;
+    bottom: 8%;
+    right: 2%;
+}
+
+#super-container{
+    width: 80%;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
