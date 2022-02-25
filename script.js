@@ -54,20 +54,29 @@ factWorker.addEventListener('message', messageReceivedFact)
 let loader3 = document.getElementById('loader3');
 
 function calcPrime(number) {
-    primeWorker.postMessage(number);
-    let par = document.getElementById('result-prime');
-    par.textContent = ""
-    loader.style.display = "block";
+    let parse = parseInt(number)
+    if (!isNaN(parse)) {
+        primeWorker.postMessage(number);
+        let par = document.getElementById('result-prime');
+        par.textContent = ""
+        loader.style.display = "block";
+    }
 }
 
 function calcFactorial(number) {
-    factWorker.postMessage(number);
-    loader2.style.display = "block";
+    let parse = parseInt(number)
+    if (!isNaN(parse)) {
+        factWorker.postMessage(number);
+        loader2.style.display = "block";
+    }
 }
 
 function calcFibonacci(number) {
-    fibWorker.postMessage(number);
-    loader3.style.display = "block";
+    let parse = parseInt(number)
+    if (!isNaN(parse)) {
+        fibWorker.postMessage(number);
+        loader3.style.display = "block";
+    }
 }
 
 function messageReceived(event) {
